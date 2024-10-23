@@ -1,6 +1,5 @@
-Sure! Here’s the complete `README.md` content in markdown format:
 
-```markdown
+
 # Discord Selfbot
 
 This is a selfbot for Discord, allowing you to automate tasks and enhance your Discord experience.
@@ -80,4 +79,4 @@ If you would like to contribute to this project, feel free to fork the repositor
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+
