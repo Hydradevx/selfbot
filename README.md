@@ -1,61 +1,83 @@
-Discord Selfbot
-A powerful Discord selfbot that lets you automate interactions in Discord with added functionality using the YouTube API.
+Sure! Here’s the complete `README.md` content in markdown format:
 
-Prerequisites
-To use this selfbot, you'll need the following:
+```markdown
+# Discord Selfbot
 
-Node.js installed on your system
-Discord Token (for selfbot authorization)
-YouTube API Key (for YouTube-related commands)
-Setup Instructions
-Clone the Repository:
+This is a selfbot for Discord, allowing you to automate tasks and enhance your Discord experience.
 
-bash
-Copy code
-git clone https://github.com/yourusername/selfbot.git
-cd selfbot
-Install Dependencies: After cloning the repository, install the required npm packages listed in index.mjs:
+## Features
 
-bash
-Copy code
+- Automate tasks with custom commands
+- Integrate with YouTube API for enhanced functionality
+
+## Requirements
+
+- **Node.js** (version 14 or later)
+- **npm** (Node Package Manager)
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+
+### 2. Install Dependencies
+
+Run the following command to install all necessary npm packages:
+
+```bash
 npm install
-Create settings.json File: Create a settings.json file in the root of the project folder. The structure of the file should look like this:
+```
 
-json
-Copy code
+### 3. Create `settings.json`
+
+In the root directory of the project, create a file named `settings.json`. This file should contain your Discord token and YouTube API key in the following format:
+
+```json
 {
-   "token": "your-discord-token",
-   "youtubeApiKey": "your-youtube-api-key"
+    "token": "YOUR_DISCORD_TOKEN",
+    "youtubeApiKey": "YOUR_YOUTUBE_API_KEY"
 }
-How to Get Your Discord Token
-Note: Using a selfbot on Discord is against Discord's Terms of Service. Proceed at your own risk.
+```
 
-Open your browser and go to the Discord website.
-Log in to your account.
-Press Ctrl+Shift+I to open the Developer Tools (or right-click and choose "Inspect").
-Go to the Network tab.
-In Discord, press Ctrl+R to reload the page.
-Look for a request named applications, library, or messages. Click on it.
-In the Headers tab of the request, scroll down until you find the Authorization field.
-Copy the value after Authorization. This is your Discord token.
-How to Get a YouTube API Key
-To interact with YouTube’s API, you need to generate an API key. Here's how:
+### How to Get Your Discord Token
 
-Go to the Google Cloud Console.
-Create a new project (or select an existing project).
-From the left-hand menu, go to APIs & Services and click Library.
-Search for "YouTube Data API v3" and enable it for your project.
-Go to APIs & Services > Credentials.
-Click on Create Credentials and choose API Key.
-Copy the generated API key.
-Usage
-Once you have the required token and API key, you can start the bot by running:
+1. Open Discord in your browser or desktop app.
+2. Press `Ctrl + Shift + I` (or `Cmd + Option + I` on Mac) to open the Developer Tools.
+3. Navigate to the **Application** tab.
+4. In the left sidebar, find and click on **Local Storage** under the `https://discord.com` section.
+5. Look for the `token` key, which will contain your Discord token. Copy the value.
 
-bash
-Copy code
+### How to Get Your YouTube API Key
+
+1. Go to the [Google Developers Console](https://console.developers.google.com/).
+2. Create a new project or select an existing project.
+3. Navigate to the **Library** section and search for "YouTube Data API v3."
+4. Enable the API for your project.
+5. Go to the **Credentials** tab and click on **Create Credentials**.
+6. Choose **API key**. Copy the generated API key.
+
+### 4. Run the Selfbot
+
+After setting up your `settings.json` file, run the selfbot using the following command:
+
+```bash
 node index.mjs
-Features
-Custom automation for Discord interactions.
-YouTube API integration for commands related to videos or music.
-Disclaimer
-Using selfbots on Discord violates Discord's Terms of Service. This project is for educational purposes only. By using this code, you accept full responsibility for any actions taken with this bot.
+```
+
+## Important Notes
+
+- **Use of selfbots may violate Discord's Terms of Service.** Use at your own risk.
+- Make sure to keep your `settings.json` file private and never share it with anyone.
+
+## Contributing
+
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
