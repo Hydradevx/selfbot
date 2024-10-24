@@ -184,11 +184,7 @@ client.on("messageCreate", async (msg) => {
         if (!userToCheck) {
             msg.reply("Usage: gaycheck @user");
             return;
-        }
-
-        const gayPercentage = Math.floor(Math.random() * 100) + 1;
-        msg.channel.send(`${userToCheck.username} is ${gayPercentage}% gay 🌈`);
-    } else if (content.startsWith('info')) {
+        } else if (content.startsWith('info')) {
         const guild = msg.guild;
         const memberCount = guild.memberCount;
         const owner = guild.members.cache.get(guild.ownerId);
@@ -211,7 +207,6 @@ client.on("messageCreate", async (msg) => {
      - spam [number] [interval in ms] [message]: Start spamming a message a specified number of times with a user-specified interval between messages.
      - pfp [@user]: Get the profile picture of the mentioned user (or yourself if not mentioned).
      - yt [search term]: Search for YouTube videos and get the first result.
-     - gaycheck @user: Check how gay a mentioned user is (1-100%).
      - serverinfo: Get information about the server.
     - setpresence [status]: Set your game/activity presence.
      - clearpresence: Remove your current game/activity presence.`);
