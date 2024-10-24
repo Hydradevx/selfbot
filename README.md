@@ -19,7 +19,7 @@ This is a selfbot for Discord, allowing you to automate tasks and enhance your D
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Hydradevx/selfbot.git
 cd <repository-directory>
 ```
 
